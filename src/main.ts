@@ -3,6 +3,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import {helloworldComponent} from "./app/helloworld/app.helloworldComponent";
+//bootstrap(helloworldComponent);
 
 if (environment.production) {
   enableProdMode();

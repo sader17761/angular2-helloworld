@@ -1,0 +1,8 @@
+<div class="bg-warning text-white">Angular 2 Hello World</div>
+<div class="bg-danger text-white">I'm a value from the Class : {{iAmVariableFromTheClass}}</div>
+
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+show = {{show}}
+<br>
+<div *ngIf="show; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
